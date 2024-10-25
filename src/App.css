@@ -104,8 +104,11 @@
     justify-content: center;
     background-color: #411600;
     position: absolute;
+    z-index: -1;
+    top: 40px;
     width: 100%;
     height: 0; 
+    overflow: hidden; /* Hides content when collapsed */
     transition: height 0.3s ease-in-out;
   }
 
@@ -115,17 +118,16 @@
   }
 
   .nav-bar .links {
-    position: static;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
     width: 100%;
+    margin: auto;
     margin-bottom: 10px;
   }
 
   .icons {
-    margin: auto;
-    margin-top: 10px;
+    margin: 10px auto; /* Centralizes icons with a top margin */
   }
 
   .menu-icon {
@@ -135,10 +137,12 @@
   .nav-menu {
     transition: transform 0.3s ease;
   }
+  
   .nav-menu.show-menu {
     transform: rotate(90deg);
   }
 }
+
 
 @media only screen and (max-width: 768px) {
   .logo-img {
