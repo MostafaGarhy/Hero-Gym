@@ -23,10 +23,14 @@ const Slider = ({ images }) => (
   >
     {images.map((image, index) => (
       <SwiperSlide key={index}>
-        <div className='slide-content'>
+        <div className='slider-content'>
           <img src={image} alt={`Slide ${index}`} style={{ width: '60%' }} />
-          <div className='slide-text'><h1>BE <strong>STRONG</strong> TRAINING HARD</h1></div>
-          <button className='slide-button'>GET INFO</button>
+          <div className='slider-info'>
+            <div className='slider-text'>
+              <h1>BE <strong>STRONG</strong> TRAINING HARD</h1>
+            </div>
+            <button className='slider-button'>GET INFO</button>
+          </div>
         </div>
       </SwiperSlide>
     ))}

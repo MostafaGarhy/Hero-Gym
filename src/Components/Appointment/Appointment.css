@@ -1,0 +1,36 @@
+.Appointment {
+    /* background-image: url(../../Assets/gallery-1.jpg); */
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+}
+
+.Appointment .container {
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Appointment .container h2 {
+    padding: 20px;
+    font-weight: 700;
+    font-size: 2.7rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.appointment-text
+{
+    font-weight: 700;
+    color: #c4c4c4;
+    font-size: 1.2rem;
+    margin: 25px;
+}
