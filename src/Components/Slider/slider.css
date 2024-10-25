@@ -1,4 +1,72 @@
 /* Slider Content Style */
 .swiper {
-    height: fit-content;
-  }
+  max-height: 100vh;
+  background: rgb(255, 94, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 94, 0, 0.34730388737526263) 0%,
+    rgba(124, 46, 7, 0.8795167725293243) 50%,
+    rgba(55, 20, 2, 1) 100%
+  );
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ff6347;
+  display: inline-block;
+}
+/* Style all pagination dots */
+.swiper-pagination-bullet {
+  background-color: #ddd;
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  margin: 0 4px;
+  transition: transform 0.5s ease, background-color 0.3s ease;
+}
+/* Style the active pagination dot */
+.swiper-pagination-bullet-active {
+  background-color: #ff6347;
+  transform: scale(1.3);
+}
+.slide-content {
+  position: relative;
+  user-select: none;
+}
+.slide-content:active {
+  cursor: pointer;
+}
+.slide-button, .slide-text{
+  position: absolute;
+}
+.slide-text {
+  right: -120px;
+  top: 250px;
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  line-height: normal;
+  width: 800px;
+  color: #ddd;
+}
+.slide-button{
+  top: 500px;
+  right: 580px;
+  width: 100px;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #f36100;
+  color: white;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+.slide-button:hover{
+  background-color: #e1732a;
+}
+.slide-button:active{
+  background-color: #c14e02;
+}
+.slide-text strong {
+  color: #f36100;
+}

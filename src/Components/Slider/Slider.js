@@ -7,11 +7,12 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import './slider.css'
 
 const Slider = ({ images }) => (
   <Swiper
     // install Swiper modules
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
+    modules={[Navigation, Pagination, Scrollbar, A11y]}
     spaceBetween={10}
     slidesPerView={1}
     loop={true}
@@ -22,7 +23,11 @@ const Slider = ({ images }) => (
   >
     {images.map((image, index) => (
       <SwiperSlide key={index}>
-        <img src={image} alt={`Slide ${index}`} style={{ width: '60%'}} />
+        <div className='slide-content'>
+          <img src={image} alt={`Slide ${index}`} style={{ width: '60%' }} />
+          <div className='slide-text'><h1>BE <strong>STRONG</strong> TRAINING HARD</h1></div>
+          <button className='slide-button'>GET INFO</button>
+        </div>
       </SwiperSlide>
     ))}
   </Swiper>
