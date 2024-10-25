@@ -1,6 +1,6 @@
 import React from 'react';
-import logo_img from '../Assets/logo-no-background-edited.png';
-import '../App.css';
+import logo_img from '../../Assets/logo-no-background-edited.png';
+import './header.css';
 
 function Logo() {
   return (
