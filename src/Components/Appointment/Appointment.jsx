@@ -6,10 +6,10 @@ function Appointment() {
     <div className="Appointment">
       <div className="container">
         <div className="row d-flex justify-content-center align-items-center">
-          <div className="col-lg-12 text-center">
+          <div className="col-lg-12 content-center">
             <h2 className="text-black-900">Registration now to get more deals</h2>
             <p className='appointment-text'> Where health, beauty and fitness meet. </p>
-            <button className=" text-white mt-3 ">Appointment</button>
+            <button className="Appointment-btn">Appointment</button>
           </div>
         </div>
       </div>

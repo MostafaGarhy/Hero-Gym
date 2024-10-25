@@ -15,6 +15,10 @@
   color: #ff6347;
   display: inline-block;
 }
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #ff9676;
+}
 /* Style all pagination dots */
 .swiper-pagination-bullet {
   background-color: #ddd;
@@ -32,6 +36,10 @@
 .slider-content {
   position: relative;
   user-select: none;
+}
+.slider-content img {
+  position: relative;
+  top: 15px;
 }
 .slider-content:active {
   cursor: pointer;
@@ -53,19 +61,20 @@
 }
 .slider-button {
   width: fit-content;
-  padding: 2%;
+  padding: 10px 20px;
   border: none;
   outline: none;
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   background-color: #f36100;
   color: white;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
   cursor: pointer;
 }
 .slider-button:hover {
   background-color: #e1732a;
+  color: #1f1f1f;
 }
 .slider-button:active {
   background-color: #c14e02;
@@ -87,6 +96,7 @@
   }
   .slider-button {
     font-size: 15px;
+    padding: 10px 15px;
   }
 }
 @media only screen and (max-width: 1210px) {
@@ -100,9 +110,6 @@
     width: 470px;
     right: -5%;
   }
-  .slider-button {
-    font-size: 14px;
-  }
 }
 @media only screen and (max-width: 1062px) {
   .swiper {
@@ -111,13 +118,13 @@
   .slider-text h1 {
     font-size: 2.5rem;
   }
+  .slider-content img {
+    top: 50px;
+  }
   .slider-info {
     width: 330px;
     top: 50%;
     right: 0%;
-  }
-  .slider-button {
-    font-size: 12px;
   }
 }
 @media only screen and (max-width: 779px) {
@@ -127,16 +134,16 @@
   .slider-text h1 {
     font-size: 2rem;
   }
+  .slider-content img {
+    top: 40px;
+  }
   .slider-info {
     width: 270px;
-  }
-  .slider-button {
-    font-size: 10px;
   }
 }
 @media only screen and (max-width: 618px) {
   .swiper {
-    max-height: 36vh;
+    max-height: 38vh;
   }
   .slider-text h1 {
     font-size: 1.5rem;
@@ -144,23 +151,21 @@
   .slider-info {
     width: 200px;
   }
-  .slider-button {
-    font-size: 8px;
-  }
 }
 @media only screen and (max-width: 477px) {
-  .swiper {
-    max-height: 30vh;
-  }
   .slider-text h1 {
-    font-size: 1rem;
+    font-size: 1.3rem;
+  }
+  .slider-content img {
+    top: 20px;
   }
   .slider-info {
     width: 130px;
-    right: 5%;
+    right: 10%;
+    top: 170px;
   }
   .swiper-button-next::after,
-  .swiper-button-prev::after{
+  .swiper-button-prev::after {
     font-size: 18px;
   }
 }

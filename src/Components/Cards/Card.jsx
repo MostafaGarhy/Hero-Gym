@@ -1,6 +1,5 @@
 import React from "react";
-import "./Cards.css";
-
+import "./Cards.css"
 function Card(props) {
   return (
     <div className="gym-card">
