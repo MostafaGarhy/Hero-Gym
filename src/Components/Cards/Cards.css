@@ -1,0 +1,80 @@
+.gym-cards {
+  background-color: #151515;
+  color: white;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.gym-cards span {
+  color: #ff6600;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.gym-cards h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  margin: 20px;
+}
+
+.gym-card {
+  border: 1px solid #464646;
+  padding: 40px 30px 52px;
+  margin: 0px 0px 30px;
+  transition: all 0.5s ease-in-out;
+  border-radius: 30px 0px;
+}
+
+.pricing-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.price span {
+  color: #c4c4c4;
+}
+
+.gym-card .price h2 {
+  color: #ff6600;
+  font-size: 3rem;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.pricing-btn:hover {
+  background-color: #ff6600;
+  color: #000;
+}
+
+.gym-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.gym-card ul li {
+  margin: 10px 0;
+  color: #c4c4c4;
+  font-size: 12px;
+}
+
+.gym-card:hover {
+  background-color: white;
+  color: black;
+}
+
+.gym-card:hover.gym-card ul li,
+.gym-card:hover .price span {
+  color: black;
+  font-weight: 600;
+}
+
+.gym-card:hover .pricing-btn {
+  background-color: #ff6600;
+}

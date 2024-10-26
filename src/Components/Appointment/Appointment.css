@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+.Appointment {
+    background-image: url(../../Assets/gallery-1.jpg);
+    background-position: center; 
+    background-size: cover; /* Zooms the background image in */
+    background-repeat: no-repeat;
+    height: 550px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Appointment .container {
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Appointment .container h2 {
+    padding: 20px;
+    font-weight: 700;
+    font-size: 2.7rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.Appointment-btn
+{
+    text-transform: uppercase !important;
+    padding: 17px 30px 16px;
+    background: transparent;
+    border: 2px solid #f36100;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+    color: aliceblue;
+    
+}
+.Appointment-btn:hover
+{
+    background: #f36100;
+}
+.appointment-text
+{
+    font-weight: 700;
+    color: #c4c4c4;
+    font-size: 1.2rem;
+    margin: 25px;
+    text-align: center;
+}
+.content-center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
