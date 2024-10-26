@@ -9,7 +9,7 @@ import Appointment from '../Components/Appointment/Appointment';
 import Image1 from '../Assets/athletic-shirtless-young-male.png';
 import Image2 from '../Assets/happy-smiling-bodybuilder.png';
 import Image3 from '../Assets/attractive-muscular-bodybuilder.png';
-// import Features from '../Components/Features/Features';
+import Features from '../Components/Features/Features';
 
 const images = [Image2, Image1, Image3];
 
@@ -18,7 +18,7 @@ function Landing() {
     <div>
       <Header />
       <Slider images={images} style={{ height: '100vh' }} />
-      {/* <Features /> */}
+      <Features />
       <Appointment />
       <Cards />
     </div>

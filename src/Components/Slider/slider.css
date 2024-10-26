@@ -16,8 +16,13 @@
   display: inline-block;
 }
 .swiper-button-next:hover,
-.swiper-button-prev:hover {
+.swiper-button-prev:hover{
   color: #ff9676;
+}
+
+.swiper-button-next:active,
+.swiper-button-prev:active{
+  color: #bc4834;
 }
 /* Style all pagination dots */
 .swiper-pagination-bullet {
@@ -190,6 +195,10 @@
   .swiper-button-next::after,
   .swiper-button-prev::after {
     font-size: 18px;
+  }
+  .slider-content img {
+    top: 40px;
+    width: 195% !important;
   }
   .slider-shadow {
     width: 250px;
