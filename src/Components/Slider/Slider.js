@@ -13,7 +13,7 @@ const Slider = ({ images }) => (
   <Swiper
     // install Swiper modules
     modules={[Navigation, Pagination, Scrollbar, A11y]}
-    spaceBetween={10}
+    spaceBetween={410}
     slidesPerView={1}
     loop={true}
     pagination={{ clickable: true }}
@@ -21,16 +21,17 @@ const Slider = ({ images }) => (
     autoplay={{ delay: 3000 }}
     effect="fade"
   >
+    <div className='slider-shadow'></div>
     {images.map((image, index) => (
       <SwiperSlide key={index}>
+        <div className='slider-info'>
+          <div className='slider-text'>
+            <h1>BE <strong>STRONG</strong> TRAINING HARD</h1>
+          </div>
+          <button className='slider-button'>GET INFO</button>
+        </div>
         <div className='slider-content'>
           <img src={image} alt={`Slide ${index}`} style={{ width: '60%' }} />
-          <div className='slider-info'>
-            <div className='slider-text'>
-              <h1>BE <strong>STRONG</strong> TRAINING HARD</h1>
-            </div>
-            <button className='slider-button'>GET INFO</button>
-          </div>
         </div>
       </SwiperSlide>
     ))}

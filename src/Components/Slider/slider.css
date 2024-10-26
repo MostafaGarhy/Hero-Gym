@@ -50,6 +50,7 @@
   right: 0;
   transform: translate(0, -70%);
   width: 600px;
+  z-index: 2;
 }
 .slider-text {
   font-family: "Oswald", sans-serif;
@@ -83,10 +84,27 @@
   color: #f36100;
 }
 
-@media only screen and (max-width: 1300px) {
-  .swiper {
-    max-height: 95vh;
+.slider-shadow {
+  position: absolute;
+  z-index: 0;
+  width: 1900px;
+  height: 350px;
+  background-color: #1f1f1f81;
+  top: 50%;
+  transform: translate(0, -40%);
+  left: 0;
+  animation: increase-width 1.5s ease-out forwards;
+}
+@keyframes increase-width {
+  0% {
+    width: 0;
   }
+  100% {
+    width: 1900px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
   .slider-text h1 {
     font-size: 4rem;
   }
@@ -100,9 +118,6 @@
   }
 }
 @media only screen and (max-width: 1210px) {
-  .swiper {
-    max-height: 82vh;
-  }
   .slider-text h1 {
     font-size: 3.5rem;
   }
@@ -112,9 +127,6 @@
   }
 }
 @media only screen and (max-width: 1062px) {
-  .swiper {
-    max-height: 70vh;
-  }
   .slider-text h1 {
     font-size: 2.5rem;
   }
@@ -123,49 +135,63 @@
   }
   .slider-info {
     width: 330px;
-    top: 50%;
     right: 0%;
+  }
+  .slider-shadow {
+    height: 300px;
   }
 }
 @media only screen and (max-width: 779px) {
   .swiper {
-    max-height: 49vh;
+    height: 100vh;
   }
   .slider-text h1 {
-    font-size: 2rem;
+    font-size: 6rem;
   }
   .slider-content img {
     top: 40px;
+    width: 170% !important;
+  }
+  .slider-shadow {
+    top: -180px;
+    left: 0;
+    width: 400px;
+    animation: increase-height 1.5s ease-out forwards;
+  }
+  @keyframes increase-height {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 1900px;
+    }
   }
   .slider-info {
-    width: 270px;
+    width: 370px;
+    right: 40%;
+    top: 70%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .slider-info {
+    right: 30%;
   }
 }
 @media only screen and (max-width: 618px) {
-  .swiper {
-    max-height: 38vh;
-  }
   .slider-text h1 {
-    font-size: 1.5rem;
+    font-size: 5rem;
   }
   .slider-info {
     width: 200px;
+    right: 40%;
   }
 }
-@media only screen and (max-width: 477px) {
-  .slider-text h1 {
-    font-size: 1.3rem;
-  }
-  .slider-content img {
-    top: 20px;
-  }
-  .slider-info {
-    width: 130px;
-    right: 10%;
-    top: 170px;
-  }
+@media only screen and (max-width: 434px) {
   .swiper-button-next::after,
   .swiper-button-prev::after {
     font-size: 18px;
+  }
+  .slider-shadow {
+    width: 250px;
   }
 }

@@ -1,0 +1,15 @@
+.features-container{
+    display: flex;
+    flex-direction: column;
+}
+.features-header{
+    text-align: center;
+}
+.features-cards{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+}
+.features-card{
+    flex: 1;
+}
