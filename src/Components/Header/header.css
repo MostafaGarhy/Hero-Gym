@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   background-color: #411600;
-  width: 100%;
+  width: inherit;
   min-height: 70px;
   z-index: 9999;
   padding-right: 10px;
@@ -107,7 +107,7 @@
     top: 40px;
     width: 100%;
     height: 0;
-    overflow: hidden; /* Hides content when collapsed */
+    overflow: hidden;
     transition: height 0.3s ease-in-out;
   }
 
@@ -126,7 +126,7 @@
   }
 
   .icons {
-    margin: 10px auto; /* Centralizes icons with a top margin */
+    margin: 10px auto;
   }
 
   .menu-icon {

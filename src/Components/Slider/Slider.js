@@ -21,14 +21,14 @@ const Slider = ({ images }) => (
     autoplay={{ delay: 3000 }}
     effect="fade"
   >
-    <div className='slider-shadow'></div>
+    <div class="slider-shadow"></div>
     {images.map((image, index) => (
       <SwiperSlide key={index}>
-        <div className='slider-info'>
-          <div className='slider-text'>
+        <div class="slider-info">
+          <div class="slider-text">
             <h1>BE <strong>STRONG</strong> TRAINING HARD</h1>
           </div>
-          <button className='slider-button'>GET INFO</button>
+          <button class="slider-button">GET INFO</button>
         </div>
         <div className='slider-content'>
           <img src={image} alt={`Slide ${index}`} style={{ width: '60%' }} />

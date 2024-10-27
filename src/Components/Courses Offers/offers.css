@@ -1,0 +1,138 @@
+.offers-container{
+    background: #151515;
+    padding: 40px 20px;
+}
+.offers-header{
+    text-align: center;
+    color: white;
+}
+.offers-header h4{
+    color: #f36100;
+}
+.offers-cards{
+    text-align: center;
+    padding: 0 20px;
+    padding-top: 20px;
+    overflow: hidden;
+    color: rgb(192, 192, 192);
+}
+.offers-card img{
+    width: 100%;
+    opacity: 0.95;
+    transform: scale(1);
+    transition: transform .5s ease-in-out;
+}
+.offers-card img:hover{
+    opacity: 1;
+    transform: scale(1.05);
+}
+.offers-card{
+    position: relative;
+    background-color: #0a0a0a;
+    z-index: 1;
+    overflow: hidden;
+}
+.card-text{
+    position: relative;
+    top: 12px;
+    padding: 0 20px 20px;
+    background-color: #0a0a0a;
+    opacity: 1;
+    z-index: 1;
+    height: fit-content;
+    text-align: start;
+    text-transform: uppercase;
+}
+.card-text small{
+    color: #f36100;
+    font-weight: 600;
+}
+.card-text p{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 4px;
+}
+.card-action{
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    background: #303030;
+    line-height: 46px;
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    position: absolute;
+    right: 20px;
+    bottom: 26px;
+    cursor: pointer;
+}
+.card-action:active{
+    background-color: #1e1e1e;
+}
+.offers-card .card-text::after{
+    position: absolute;
+    left: -5px;
+    top: -50px;
+    height: 100px;
+    width: 700px;
+    border-top: 4px solid #464646;
+    background: #0a0a0a;
+    content: "";
+    transform: rotate(-5deg);
+    z-index: -1;
+}
+.offer-row{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    "card-1 card-1 card-2 card-2 card-3 card-3"
+    "card-4 card-4 card-4 card-5 card-5 card-5";
+    gap: 20px;
+}
+.card-1{
+    grid-area: card-1;
+}
+.card-2{
+    grid-area: card-2;
+}
+.card-3{
+    grid-area: card-3;
+}
+.card-4{
+    grid-area: card-4;
+}
+.card-5{
+    grid-area: card-5;
+}
+.offer-row .offers-card {
+    transform: scale(0.95); 
+    transition: transform 1s ease;
+}
+@media only screen and (max-width: 992px) {
+    .offer-row{
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "card-1 card-2"
+        "card-3 card-4"
+        "card-5 card-5";
+    }
+    .offer-row .offers-card {
+        transform: scale(1);
+    }
+}
+@media only screen and (max-width: 787px) {
+    .offer-row{
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "card-1"
+        "card-2"
+        "card-3"
+        "card-4"
+        "card-5";
+    }
+}
