@@ -42,7 +42,7 @@
 }
 .slider-content {
   position: relative;
-  user-select: none;
+  /* user-select: none; */
 }
 .slider-content img {
   position: relative;

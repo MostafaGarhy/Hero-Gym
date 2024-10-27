@@ -79,6 +79,10 @@
 .icons i:hover {
   color: #007bff;
 }
+.fa-instagram:hover
+{
+  color: #D62976 !important;
+}
 
 .nav-menu {
   margin-left: auto;
