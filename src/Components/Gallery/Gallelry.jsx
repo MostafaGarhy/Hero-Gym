@@ -21,7 +21,7 @@ function Gallery() {
   const handleClose = () => setShow(false);
 
   return (
-    <div className='gallery-container pt-5' id='gallery'> 
+    <div className='gallery-container' id='gallery'> 
       <div className='content-center'>
         <span className ="mb-2"> OUR GALLERY </span>
         <h2 className='text-center text-light mb-5'> Welcome to GYM Gallery </h2>

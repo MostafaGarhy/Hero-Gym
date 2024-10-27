@@ -46,10 +46,10 @@ function Trainers() {
   };
 
   return (
-    <div className="trainers-team py-5" id='coaches'>
+    <div className="trainers-team" id='coaches'>
       <div className="container">
       <div className='content-center'>
-        <span className ="mb-2"> OUR GALLERY </span>
+        <span className ="mb-2"> OUR COACHES</span>
         <h2 className='text-center text-light mb-5'> GYM Coaches </h2>
       </div>
         <Slider {...settings}>

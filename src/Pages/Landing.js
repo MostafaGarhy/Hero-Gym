@@ -17,6 +17,7 @@ import Offers from '../Components/Courses Offers/Offers';
 
 /* Landing Style Import */
 import './landing.css';
+import ScrollToTopButton from './ScrollToTopButton';
 
 const images = [Image2, Image1, Image3];
 
@@ -33,6 +34,7 @@ function Landing() {
         <Gallelry />
         <Trainers />
         <Footer />
+        <ScrollToTopButton />
       </div>
     </div>
   );

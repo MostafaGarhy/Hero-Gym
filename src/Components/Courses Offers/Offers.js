@@ -10,7 +10,7 @@ import './offers.css';
 
 function Offers() {
     return (
-        <div className='offers-container'>
+        <div className='offers-container' id='offers'>
             <div className='container'>
                 <div className='offers-header'>
                     <h4>OUR CLASSES</h4>

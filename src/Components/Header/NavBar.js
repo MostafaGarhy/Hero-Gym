@@ -12,9 +12,10 @@ function NavBar() {
                 <div className='links'>
                     <a href='/' target='' rel="noopener noreferrer"><button className='nav-btn'>HOME</button></a>
                     <a href='#about'><button className='nav-btn'>ABOUT</button></a>
+                    <a href='#offers'><button className='nav-btn'>OFFERS</button></a>
+                    <a href='#pricing'><button className='nav-btn'>PRICING</button></a>
                     <a href='#gallery'><button className='nav-btn'>GALLERY</button></a>
                     <a href='#coaches'><button className='nav-btn'>COACHES</button></a>
-                    <a href='#pricing'><button className='nav-btn'>PRICING</button></a>
                     <a href='#contact'><button className='nav-btn'>CONTACT US</button></a>
                 </div>
                 <div className='icons'>
