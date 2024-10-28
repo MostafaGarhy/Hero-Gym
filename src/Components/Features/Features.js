@@ -7,7 +7,7 @@ function Features() {
         <div className='features-container' id='about'>
             <div className='container'>
                 <div className='features-header'>
-                    <h4>WHY CHOSE US?</h4>
+                    <h4>WHY CHOOSE US?</h4>
                     <h1>PUSH YOUR LIMITS FORWARD</h1>
                 </div>
                 <div className='features-cards'>
@@ -23,21 +23,21 @@ function Features() {
                             <div className='features-card-img-container'>
                                 <img src={barbell} alt='barbell' />
                             </div>
-                            <h2>Healthy nutrition plan</h2>
+                            <h3>Healthy nutrition plan</h3>
                             <p>We believe in building trust and transparency with our customers and partners.</p>
                         </div>
                         <div className='features-card col-lg-3 col-md-6 col-sm-12'>
                             <div className='features-card-img-container'>
                                 <img src={barbell} alt='barbell' />
                             </div>
-                            <h2>Proffesponal training plan</h2>
+                            <h3>Professional training</h3>
                             <p>We are a community of like-minded individuals who share a common passion for technology.</p>
                         </div>
                         <div className='features-card col-lg-3 col-md-6 col-sm-12'>
                             <div className='features-card-img-container'>
                                 <img src={barbell} alt='barbell' />
                             </div>
-                            <h2>Unique to your needs</h2>
+                            <h3>Unique to your needs</h3>
                             <p>We are a community of like-minded individuals who share a common passion for technology.</p>
                         </div>
                     </div>

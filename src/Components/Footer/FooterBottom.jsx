@@ -9,7 +9,7 @@ function FooterBottom() {
                 <div className="row justify-content-center">
                     <div className="col-lg-4 col-md-4  col-sm-6 mb-4 text-start">
                         <img src={GymLogo} className="mb-2" width="50%" height="50px" alt="Gym Logo" />
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua endisse ultrices gravida lorem.</p>
+                        <p>Hero GYM offers top-notch facilities and expert trainers dedicated to helping you achieve your fitness goals. We provide personalized workout plans, modern equipment, and a supportive community to keep you motivated.</p>
                         <div className="social-icons">
                             <a href='/' target='_blank' rel="noopener noreferrer"><i className="fa-brands fa-facebook"></i></a>
                             <a href='/' target='_blank' rel="noopener noreferrer"><i className="fa-brands fa-twitter"></i></a>
